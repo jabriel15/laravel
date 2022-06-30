@@ -14,9 +14,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('contacts', [
-            "title" => "Contacts",
-        ]);
+        $contacts = contact::paginate(2);
+        return view('admin/contacts/index', compact('contacts'));
     }
 
     /**

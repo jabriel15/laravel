@@ -18,7 +18,9 @@
 
 <body class="animsition">
     <div class="page-wrapper">
-    
+        <!-- HEADER MOBILE-->
+        @include('partials/header-mobile')
+        <!-- END HEADER MOBILE-->
 
         <!-- MENU SIDEBAR-->
         @include('partials/sidebar')

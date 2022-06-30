@@ -1,16 +1,25 @@
-<aside class="menu-sidebar d-none d-lg-block">
-    <div class="logo">
-        <a href="#">
-            <img src="{{asset('admin/images//icon/logo.png')}}" alt="Cool Admin" />
-        </a>
+<header class="header-mobile d-block d-lg-none">
+    <div class="header-mobile__bar">
+        <div class="container-fluid">
+            <div class="header-mobile-inner">
+                <a class="logo" href="index.html">
+                    <img src="images/icon/logo.png" alt="CoolAdmin" />
+                </a>
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
     </div>
-    <div class="menu-sidebar__content js-scrollbar1">
-        <nav class="navbar-sidebar">
-            <ul class="list-unstyled navbar__list">
-                <li class="active has-sub">
+    <nav class="navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-mobile__list list-unstyled">
+                <li class="has-sub">
                     <a class="js-arrow" href="#">
                         <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                    <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                         <li>
                             <a href="index.html">Dashboard 1</a>
                         </li>
@@ -26,8 +35,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ route('contacts.index') }}">
-                        <i class="fas fa-chart-bar"></i>Data Contact Us</a>
+                    <a href="chart.html">
+                        <i class="fas fa-chart-bar"></i>Charts</a>
                 </li>
                 <li>
                     <a href="table.html">
@@ -48,7 +57,7 @@
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
                         <i class="fas fa-copy"></i>Pages</a>
-                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                    <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                         <li>
                             <a href="login.html">Login</a>
                         </li>
@@ -63,7 +72,7 @@
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
                         <i class="fas fa-desktop"></i>UI Elements</a>
-                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                    <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                         <li>
                             <a href="button.html">Button</a>
                         </li>
@@ -100,6 +109,6 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
-    </div>
-</aside>
+        </div>
+    </nav>
+</header>
